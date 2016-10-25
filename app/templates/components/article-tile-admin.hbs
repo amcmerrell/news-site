@@ -1,21 +1,20 @@
-
-  <div class="row">
-    <div class="col-md-6">
-      {{#link-to 'article' article.id}}
-        <img src={{article.image}} alt={{article.title}} class="img-responsive">
-      {{/link-to}}
-    </div>
-    <div class="col-md-6">
-      {{#link-to 'article' article.id}}
-        <h3>{{article.title}}</h3>
-        <p>{{partal article.body}}</p>
-      {{/link-to}}
-      <hr>
-      <button class="btn btn-info">Edit Article</button>
-      <hr>
-      {{#link-to 'article' article.id}}
-        <p id="footer" class="pull-left">by {{article.author}}</p>
-        <p id="footer" class="pull-right">{{article.date}}</p>
-      {{/link-to}}
-    </div>
+<div class="row">
+  <div class="col-md-6">
+    {{#link-to 'article' article.id}}
+      <img src={{article.image}} alt={{article.title}} class="img-responsive">
+    {{/link-to}}
   </div>
+  <div class="col-md-6">
+    {{#link-to 'article' article.id}}
+      <h3>{{article.title}}</h3>
+      <p>{{partal article.body}}</p>
+    {{/link-to}}
+    <hr>
+    <button class="btn btn-info">Edit Article</button>
+    <hr>
+    {{#link-to 'article' article.id}}
+      <p id="footer" class="pull-left">by {{article.author}}</p>
+      <p id="footer" class="pull-right">{{article.date}}</p>
+    {{/link-to}}
+  </div>
+</div>
