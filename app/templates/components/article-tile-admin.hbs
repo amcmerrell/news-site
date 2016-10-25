@@ -10,7 +10,9 @@
       <p>{{partal article.body}}</p>
     {{/link-to}}
     <hr>
-    <button class="btn btn-info">Edit Article</button>
+    <a href="article/{{article.id}}/admin">
+      <button class="btn btn-info">Edit Article</button>
+    </a>
     <hr>
     {{#link-to 'article' article.id}}
       <p id="footer" class="pull-left">by {{article.author}}</p>
